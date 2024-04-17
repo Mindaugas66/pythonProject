@@ -1,2 +1,3 @@
-while True:
-    user_input = input("Enter a float number with 3 digits after the decimal point: ")
+my_list = [5, 5, 5]
+total_sum = sum(my_list)
+print(total_sum)

@@ -3,9 +3,11 @@ import aiohttp
 import asyncio
 from bs4 import BeautifulSoup
 
+
 async def fetch_page(session, url):
     async with session.get(url) as response:
         return await response.text()
+
 
 async def scrape_webpages(base_url):
     desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
@@ -13,7 +15,7 @@ async def scrape_webpages(base_url):
 
     async with aiohttp.ClientSession() as session:
         with open(file_path, "w", encoding="utf-8") as file:
-            for letter in range(ord('A'), ord('Z')+1):
+            for letter in range(ord('A'), ord('Z') + 1):
                 url = f"{base_url}/{chr(letter)}-Girl"
                 print(f"Scraping page {chr(letter)}")
                 response_text = await fetch_page(session, url)
@@ -24,6 +26,7 @@ async def scrape_webpages(base_url):
                     if title_text:
                         print(f"Extracted text: {title_text}")
                         file.write(title_text + "\n")
+
 
 # Example usage
 base_url = "https://www.nepaliname.com/babyname/startingWith"

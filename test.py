@@ -41,3 +41,28 @@ loop = asyncio.new_event_loop()
 asyncio.set_event_loop(loop)
 # Run the coroutine
 loop.run_until_complete(scrape_webpages(base_url, start_page, end_page))
+
+
+
+# Sukurkite kintamuosius, kuriuose reprezentuotų vartotojo vardą ir slaptažodį
+# Pradėkite begalinį ciklą, leidžiantį įvesti vartotojo vardą ir slaptažodį
+# Jei duomenys teisingi, sustabdykite begalinį ciklą ir išspausdinkite pasisveikinimo pranešimą.
+
+
+import time
+username = "bananas"
+password = "makaka"
+
+while True:
+    username_input = input("Please enter your username: ")
+    time.sleep(0.2)
+    password_input = input("Please enter your password: ")
+    if username_input != username:
+        print("Username not found in the database")
+    elif password_input == password:
+        print(f"Welcome back {username}")
+        break
+    else:
+        print("Incorrect password")
+
+

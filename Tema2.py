@@ -356,3 +356,90 @@ while True:
 print(f"Rounded number of: {user_input} is: {round(number, 2)}")
 
 
+
+
+
+# Sukurkite kintamuosius, kuriuose reprezentuotų vartotojo vardą ir slaptažodį
+# Pradėkite begalinį ciklą, leidžiantį įvesti vartotojo vardą ir slaptažodį
+# Jei duomenys teisingi, sustabdykite begalinį ciklą ir išspausdinkite pasisveikinimo pranešimą.
+
+
+import time
+username = "bananas"
+password = "makaka"
+
+while True:
+    username_input = input("Please enter your username: ")
+    time.sleep(0.2)
+    password_input = input("Please enter your password: ")
+    if username_input != username:
+        print("Username not found in the database")
+    elif password_input == password:
+        print(f"Welcome back {username}")
+        break
+    else:
+        print("Incorrect password")
+
+
+# Leiskite naudotojui įvesti 10 sveikųjų skaičių
+# tada spausdinkite šių įvestų skaičių sumą ir vidurkį.
+
+number_list = []
+numbers = [int(input("Please enter a number: ")) for _ in range(10)]
+number_list.append(numbers)
+
+for x in number_list:
+    number_sum = sum(x)
+    print(f"Your total number is: {number_sum}")
+    print(f"Your total average is: {number_sum / 10}")
+
+
+
+# Sugeneruokite dict iš 10 skaitmenų (keys): 1,2,3...10
+# Kiekvienam key turėtų būti priskirta atsitiktinio sveikojo skaičiaus vertė nuo 1 iki 100.
+
+import random
+
+numbers = {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10": ""}
+
+for keys in numbers:
+    numeriukas = random.randint(1, 100)
+    numbers[keys] = numeriukas
+print(numbers)
+
+
+# Sukurkite PIN kodo nulaužimo programą
+# Tarkime, PIN kodą sudaro 4 atsitiktiniai skaitmenys.
+# Reikšmę galite saugoti kintamajame. Tada sukurkite ciklą, einantį per visas galimas kombinacijas
+# kol rasite tą, kurią įvedėte.
+import random
+pincode = str(random.randint(1, 9999))
+correct_pin = pincode.zfill(4)
+
+while True:
+    guess = str(random.randint(1, 9999))
+    correct_guess = guess.zfill(4)
+    if correct_guess == correct_pin:
+        print(f"Hacking successful. Pincode is: {correct_pin}")
+        break
+    else:
+        print(f"Trying pincode {correct_guess}...")
+
+
+
+
+user_input = input("Enter number sequence: ")
+number_list = [int(digit) for digit in str(user_input)]
+average = sum(number_list) / len(number_list)
+print(number_list)
+print(f"Total average number is {int(average)}")
