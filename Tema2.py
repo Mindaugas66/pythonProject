@@ -3,12 +3,9 @@ age = int(input("Kiek jum yra metu? "))
 
 print(f"Sveiki, {name}, Jus esate gimes {2024 - age}")
 
-
-
 sentence = input("Write a sentence: ")
 print(sentence[::-1])
 print(sentence[::2])
-
 
 number1 = float(input("Choose a number: "))
 number2 = float(input("Choose another number: "))
@@ -17,16 +14,12 @@ print(f"Daugyba: {number1} * {number2} = {number1 * number2}")
 print(f"Dalyba: {number1} / {number2} = {number1 / number2}")
 print(f"Sudetis: {number1} + {number2} = {number1 + number2}")
 
-
-
 mylist = [5, 15, 45, 99, 78]
 print(sum(mylist))
 
-
-
-
 # Importuojami visi operatoriai iš operatoriaus modulio
 from operator import *
+
 # Sukuriamas sąrašas su penkiais skaičiais
 mylist = [5, 15, 45, 99, 78]
 # Pradinė sandauga nustatoma kaip 1
@@ -39,7 +32,6 @@ for item in mylist:
 print(m)
 
 
-
 def multlist(mylist):
     # Inicializuojama kintamasis result su pradine reiksme 1
     result = 1
@@ -49,13 +41,12 @@ def multlist(mylist):
         result = result * x
     # Grąžinama sandauga visų sąrašo elementų
     return result
+
+
 # Sukuriamas sąrašas su penkiais skaičiais
 mylist = [5, 15, 45, 99, 78]
 # Iškviečiama funkcija multlist su mylist kaip argumentu ir išspausdinamas grąžintas rezultatas
 print(multlist(mylist))
-
-
-
 
 import numpy
 
@@ -68,10 +59,6 @@ mylist = [1, 5, 98, 512, 6451, 11, 21]
 
 print(max(mylist))
 
-
-
-
-
 # Sukuriamas sąrašas
 mylist = ["Minde", "Bananas", "Tevas", "Juozas"]
 # Sukuriamas tuščias string'as su vienu tarpų simboliu tarp jų
@@ -83,20 +70,15 @@ for item in mylist:
 # Atspausdinamas sujungtas string'as
 print(sudeta)
 
-
-
-
 mylist = ["Minde", "Bananas", "Tevas", "Juozas"]
 mylist1 = [1, 5, 9, 8, 4]
 sudeta = mylist + mylist1
 
 print(sudeta)
 
-
-
 mynumbers = []
 
-number =  input("gimme a number: ")
+number = input("gimme a number: ")
 number1 = input("gimme a second number: ")
 number2 = input("gimme a third number: ")
 mynumbers.append(number)
@@ -104,9 +86,6 @@ mynumbers.append(number1)
 mynumbers.append(number2)
 
 print(max(mynumbers))
-
-
-
 
 mynumbers = []
 
@@ -123,7 +102,6 @@ while True:
         break
 
 print("Maximum number:", max(mynumbers))
-
 
 # Parašykite python programą, kuri paprašytų vartotojo įvesti vardą, pavardę, amžių
 # Įrašykite šias reikšmes į dict duomenų struktūrą ir ją išspausdinkite.
@@ -148,7 +126,6 @@ user_info = {
     "professions": ["Laisvo oro direktorius", "Veiperis", "Bananas"]}
 print(user_info)
 
-
 # Sukurkite programą, kuri iš sakinių, kuriuos jus įvedėt, sukurtų dict, kuriame keys reikštų raides
 # o values šių raidžių dažnumą tuose sakiniuose. Programa turi reikalauti, kad vartotojas įvestų ne mažiau kaip 3 sakinius.
 
@@ -163,7 +140,6 @@ for sentence in sentences:
 print("Letter frequencies: ")
 for letter, freq in dic_sentence.items():
     print(f"{letter} {freq}")
-
 
 # Sukurkite studentų vardų ir jų pažymėjimų žodyną:
 #
@@ -237,7 +213,6 @@ elif name in vip_users:
 else:
     print("Welcome back!")
 
-
 # Leiskite naudotojui įvesti du skaičius. Išspausdinkite, kuris iš jų didesnis už kitą,arba ar jie lygūs.
 
 number1 = input("Please enter a number: ")
@@ -249,7 +224,6 @@ elif number1 < number2:
     print(f"{number1} is greater than {number2}!")
 elif number1 > number2:
     print(f"{number1} is less than {number2}!")
-
 
 # Parašykite nedidelę skaičiuotuvo programą, kuri leistų naudotojui įvesti du skaičius ir simbolį
 # ir tada atlikti operaciją bei išspausdinti atsakymą.
@@ -275,11 +249,11 @@ while True:
         print(f"{number1} / {number2} = {number1 ** number2}")
     break
 
-
 # Sukurkite skaičių nuo 1 iki 10 spėjimo žaidimą su atsitiktinių skaičių biblioteka
 
 import random
 import time
+
 lucky_number = random.randint(1, 100)
 print("Welcome to my shitty guessing game!")
 time.sleep(0.5)
@@ -293,12 +267,9 @@ while True:
     else:
         print("Feels bad man... right number is a bit lower")
 
-
-
-
 # Sukurkite Python list su įvairiausiais tipo objektais. Išspausdinkite visus tipus.
 
-my_list = ["mindaugas", 23, 1.83,]
+my_list = ["mindaugas", 23, 1.83, ]
 
 print(type(my_list[0]))
 print(type(my_list[1]))
@@ -306,7 +277,7 @@ print(type(my_list[2]))
 
 # Sukurkite Python list su įvairiausiais tipo objektais. Išspausdinkite visus tipus.
 # Atspausdinkite visus šiuos objektus ir jų tipus , atskirtus "|" simboliu.
-my_list = ["mindaugas", 23, 1.83,]
+my_list = ["mindaugas", 23, 1.83, ]
 
 print(type(my_list[0]))
 print(type(my_list[1]))
@@ -314,7 +285,6 @@ print(type(my_list[2]))
 
 for item in my_list:
     print(item, end=" | ")
-
 
 # Sukurkit list su float tipo duomenimis, turinčius 3 skaitmenis po kablelio
 # Sukurkite kitą list su visomis reikšmėmis, suapvalintomis iki 2 ženklų po kablelio
@@ -329,15 +299,13 @@ for item in numbers:
 print(numbers)
 print(f"rounded numbers are: {numbers1} ")
 
-
 # Sukurkite list su mokinių vardais ir juos surūšiuokite, rezultatą išspausdinkite į terminalą.
 
-students = ["Martynas","Onute","Petriukas","Kaziukas","Briedis","Albertas","Stanislovas"]
+students = ["Martynas", "Onute", "Petriukas", "Kaziukas", "Briedis", "Albertas", "Stanislovas"]
 
 sorted_students = sorted(students)
 
 print(sorted_students)
-
 
 # Parašykite programą, kuri leistų vartotojui įrašyti bet kokį kintamąjį
 # skaičių ir jį suapvalinti iki tam tikro skaičiaus po kablelio.
@@ -355,16 +323,13 @@ while True:
 
 print(f"Rounded number of: {user_input} is: {round(number, 2)}")
 
-
-
-
-
 # Sukurkite kintamuosius, kuriuose reprezentuotų vartotojo vardą ir slaptažodį
 # Pradėkite begalinį ciklą, leidžiantį įvesti vartotojo vardą ir slaptažodį
 # Jei duomenys teisingi, sustabdykite begalinį ciklą ir išspausdinkite pasisveikinimo pranešimą.
 
 
 import time
+
 username = "bananas"
 password = "makaka"
 
@@ -380,7 +345,6 @@ while True:
     else:
         print("Incorrect password")
 
-
 # Leiskite naudotojui įvesti 10 sveikųjų skaičių
 # tada spausdinkite šių įvestų skaičių sumą ir vidurkį.
 
@@ -392,8 +356,6 @@ for x in number_list:
     number_sum = sum(x)
     print(f"Your total number is: {number_sum}")
     print(f"Your total average is: {number_sum / 10}")
-
-
 
 # Sugeneruokite dict iš 10 skaitmenų (keys): 1,2,3...10
 # Kiekvienam key turėtų būti priskirta atsitiktinio sveikojo skaičiaus vertė nuo 1 iki 100.
@@ -417,12 +379,12 @@ for keys in numbers:
     numbers[keys] = numeriukas
 print(numbers)
 
-
 # Sukurkite PIN kodo nulaužimo programą
 # Tarkime, PIN kodą sudaro 4 atsitiktiniai skaitmenys.
 # Reikšmę galite saugoti kintamajame. Tada sukurkite ciklą, einantį per visas galimas kombinacijas
 # kol rasite tą, kurią įvedėte.
 import random
+
 pincode = str(random.randint(1, 9999))
 correct_pin = pincode.zfill(4)
 
@@ -435,11 +397,73 @@ while True:
     else:
         print(f"Trying pincode {correct_guess}...")
 
-
-
-
 user_input = input("Enter number sequence: ")
 number_list = [int(digit) for digit in str(user_input)]
 average = sum(number_list) / len(number_list)
 print(number_list)
 print(f"Total average number is {int(average)}")
+
+
+# Patys sukurkite bent 5 skirtingas funkcijas ir jas išbandykite.
+
+def number_sum(a, b, c):
+    return a + b + c
+
+
+def number_divide(a, b, c):
+    return a / b / c
+
+
+def number_substract(a, b, c):
+    return a - b - c
+
+
+def number_multiply(a, b, c):
+    return a * b * c
+
+
+print(number_sum(5, 8, 9))
+print(number_divide(5, 8, 9))
+print(number_substract(5, 8, 9))
+print(number_multiply(5, 8, 9))
+
+
+# Sukurkite funkciją, kuri prie kiekvieno list nario prideda string galūnę.
+def add_ending_to_list(input_list, ending):
+    return [item + ending for item in input_list]
+
+
+my_list = ["Makaka", "Hakuna", "Matata"]
+result = add_ending_to_list(my_list, "_end")
+print(result)
+
+
+
+
+# Sukurkite mini python programą, kuri kaip įvestį paimtų du skaičius ir grąžintų jų sumą, atimtį, dalybą, daugybą.
+def calculator(a, b, c, operation):
+    if operation == "sum":
+        return a + b + c
+    elif operation == "sub":
+        return a - b - c
+    elif operation == "mult":
+        return a * b * c
+    elif operation == "div":
+        return a / b / c
+    else:
+        print("unkown operation :(")
+
+
+a_number = int(input("Please input a number: "))
+b_number = int(input("Please input a number: "))
+c_number = int(input("Please input a number: "))
+operation_select = input("Please choose a operation (+) (-) (*) (/): ")
+
+if operation_select == "+":
+    print(calculator(a_number, b_number, c_number, operation="sum"))
+elif operation_select == "-":
+    print(calculator(a_number, b_number, c_number, operation="sub"))
+elif operation_select == "*":
+    print(calculator(a_number, b_number, c_number, operation="mult"))
+elif operation_select == "/":
+    print(calculator(a_number, b_number, c_number, operation="div"))
